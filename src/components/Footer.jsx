@@ -2,40 +2,113 @@ import React from "react";
 
 function Footer() {
   return (
-    <>
-      <div className="flex items-center justify-center flex-col mt-[150px]">
-        <div className="flex items-center justify-center py-6 gap-6 flex-col">
-          <a className="block text-teal-600" href="/">
-            <span className="sr-only">Home</span>
-            <img src="src/images/juno-logo.png" alt="logo" className="h-16 w-18"></img>
-          </a>
-          <div className="flex space-x-4 items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 50 50">
-              <path fill="white" d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
-            </svg>
-            <a href="" className="text-white bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-700"> @juno_2k24 </a>
+    <footer className="bg-transparent text-white py-12 mt-12">
+      <div className="container mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-center">
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-xl font-display mb-4">Contact Us</h3>
+            <p className="mb-2">📍 123 College Road, Campus XYZ</p>
+            <p className="mb-2">📱 123-456-7890</p>
+            <p>📧 event@college.edu</p>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-xl font-display mb-4">Quick Links</h3>
+            <ul className="space-y-2">
+              <li>
+                <a
+                  href="/"
+                  className="hover:text-primary-500"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    location.href = "/";
+                  }}
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/about"
+                  className="hover:text-primary-500"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    location.href = "/about";
+                  }}
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/events"
+                  className="hover:text-primary-500"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    location.href = "/events";
+                  }}
+                >
+                  Events
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/contact"
+                  className="hover:text-primary-500"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    location.href = "/contact";
+                  }}
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Follow Us */}
+          <div>
+            <h3 className="text-xl font-display mb-4">Follow Us</h3>
+            <ul className="space-y-2">
+              <li>
+                <a
+                  href="https://twitter.com"
+                  className="hover:text-primary-500"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://instagram.com"
+                  className="hover:text-primary-500"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* About Us */}
+          <div>
+            <h3 className="text-xl font-display mb-4">About Us</h3>
+            <p className="mb-2">
+              Juno College Event is dedicated to organizing engaging and memorable events for our community. We aim to connect students and enhance campus life.
+            </p>
           </div>
         </div>
-        <div className="flex flex-col py-8 text-center justify-center items-center gap-6">
-          <h1 className="font-bold text-[24px] text-white">For queries contact</h1>
-          <div className="flex gap-6 justify-center items-center text-center flex-col sm:flex-row">
-            <div className="flex space-y-2 flex-col">
-              <h1 className="capitalize text-[20px] font-semibold text-black">Person 1</h1>
-              <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500">1234567890</h2>
-            </div>
-            <div className="flex space-y-2 flex-col">
-              <h1 className="capitalize text-[20px] font-semibold text-black">Person 2</h1>
-              <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500">1234567890</h2>
-            </div>
-            <div className="flex space-y-2 flex-col">
-              <h1 className="capitalize text-[20px] font-semibold text-black">Person 3</h1>
-              <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500">1234567890</h2>
-            </div>
-          </div>
+
+        <div className="mt-12 pt-8 border-t border-gray-800 text-center">
+          <p>&copy; 2024 Juno College Event. All rights reserved.</p>
         </div>
-        <div className="py-6 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500">@ Juno 2k24</div>
       </div>
-    </>
+    </footer>
   );
 }
 

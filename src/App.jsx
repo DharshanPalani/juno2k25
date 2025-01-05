@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
 import './index.css';
 import Navbar from './components/NavBar';
 import Footer from './components/Footer';
+import backgroundImage from './images/PC.png';
 
-//Pages for the Routes
+// Pages for the Routes
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Events from './pages/Events';
@@ -13,7 +13,15 @@ import Team from './pages/Team';
 function App() {
   return (
     <Router>
-      <div className="bg-[url('/PC.png')] bg-fixed bg-gradient-to-r from-gray-900 to-gray-800 min-h-screen">
+      <div 
+        style={{ 
+          backgroundImage: `url(${backgroundImage})`, 
+          backgroundSize: 'cover', 
+          backgroundPosition: 'center', 
+          backgroundRepeat: 'no-repeat',
+          minHeight: '100vh' 
+        }}
+      >
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -28,4 +36,3 @@ function App() {
 }
 
 export default App;
-

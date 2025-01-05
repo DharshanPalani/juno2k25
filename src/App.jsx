@@ -13,7 +13,7 @@ import Team from './pages/Team';
 function App() {
   return (
     <Router>
-      <div className="bg-[url('/PC.png')] bg-fixed bg-gradient-to-r from-gray-900 to-gray-800 min-h-screen">
+      <div className="bg-[url('/public/PC.png')] bg-fixed bg-gradient-to-r from-gray-900 to-gray-800 min-h-screen">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

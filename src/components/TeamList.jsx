@@ -6,29 +6,35 @@ function TeamList() {
   const [flipped, setFlipped] = useState([]);
 
   useEffect(() => {
-    const handleScrollAnimation = () => {
-      roleRefs.current.forEach((element, index) => {
-        if (element) {
-          const observer = new IntersectionObserver(
-            ([entry]) => {
-              if (entry.isIntersecting) {
-                element.classList.add("animate-fade-in-up");
-                setFlipped((prev) => {
-                  const updated = [...prev];
-                  updated[index] = true;
-                  return updated;
-                });
-              }
-            },
-            { threshold: 0.5 }
-          );
-          observer.observe(element);
-        }
-      });
-    };
+    window.scrollTo({ top: 0, behavior: "smooth" });
 
-    window.addEventListener("scroll", handleScrollAnimation);
-    return () => window.removeEventListener("scroll", handleScrollAnimation);
+    const timer = setTimeout(() => {
+      const handleScrollAnimation = () => {
+        roleRefs.current.forEach((element, index) => {
+          if (element) {
+            const observer = new IntersectionObserver(
+              ([entry]) => {
+                if (entry.isIntersecting) {
+                  element.classList.add("animate-fade-in-up");
+                  setFlipped((prev) => {
+                    const updated = [...prev];
+                    updated[index] = true;
+                    return updated;
+                  });
+                }
+              },
+              { threshold: 0.5 }
+            );
+            observer.observe(element);
+          }
+        });
+      };
+
+      window.addEventListener("scroll", handleScrollAnimation);
+      return () => window.removeEventListener("scroll", handleScrollAnimation);
+    }, 1000);
+
+    return () => clearTimeout(timer);
   }, []);
 
   const teamGroups = {
@@ -77,7 +83,6 @@ function TeamList() {
                     {/* Front Side */}
                     <div className="bg-gray-700 w-[300px] h-[300px] flex items-center justify-center text-gray-400">
                       {/* Role Image */}
-                      
                     </div>
 
                     {/* Back Side */}

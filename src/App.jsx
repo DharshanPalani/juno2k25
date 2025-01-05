@@ -14,13 +14,8 @@ function App() {
   return (
     <Router>
       <div 
-        style={{ 
-          backgroundImage: `url(${backgroundImage})`, 
-          backgroundSize: 'cover', 
-          backgroundPosition: 'center', 
-          backgroundRepeat: 'no-repeat',
-          minHeight: '100vh' 
-        }}
+        className="bg-fixed bg-gradient-to-r from-gray-900 to-gray-800 min-h-screen" 
+        style={{ backgroundImage: `url(${backgroundImage})`}}
       >
         <Navbar />
         <Routes>

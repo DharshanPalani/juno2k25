@@ -5,6 +5,11 @@ module.exports = {
       animation: {
         "fade-in-up": "fadeInUp 1s ease-out forwards",
       },
+      colors: {
+        'goldish1': '#ffd25b',
+        'goldish2': '#f8b13d'
+      }
+      ,
       keyframes: {
         fadeInUp: {
           "0%": { opacity: 0, transform: "translateY(20px)" },

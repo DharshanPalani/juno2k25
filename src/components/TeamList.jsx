@@ -39,27 +39,13 @@ function TeamList() {
 
   const teamGroups = {
     MEMBERS: [
-      { name: "Member 1", id: 0 },
-      { name: "Member 2", id: 1 },
-      { name: "Member 3", id: 2 },
-      { name: "Member 4", id: 3 },
-      { name: "Member 5", id: 4 },
-      { name: "Member 6", id: 5 }
-    ],
-    DEANS: [
-      { name: "Dean 1", id: 6 },
-      { name: "Dean 2", id: 7 }
-    ],
-    HEADS: [
-      { name: "Head 1", id: 8 },
-      { name: "Head 2", id: 9 }
-    ],
-    STAFF: [
-      { name: "Staff 1", id: 10 },
-      { name: "Staff 2", id: 11 },
-      { name: "Staff 3", id: 12 },
-      { name: "Staff 4", id: 13 },
-      { name: "Staff 5", id: 14 }
+      { role: "Role 1", name: "Member 1", id: 0 },
+      { role: "Role 2", name: "Member 2", id: 1 },
+      { role: "Role 3", name: "Member 3", id: 2 },
+      { role: "Role 4", name: "Member 4", id: 3 },
+      { role: "Role 5", name: "Member 5", id: 4 },
+      { role: "Role 6", name: "Member 6", id: 5 },
+      { role: "Role 7", name: "Member 7", id: 6 }
     ]
   };
 
@@ -69,12 +55,12 @@ function TeamList() {
         {Object.entries(teamGroups).map(([group, members]) => (
           <div key={group}>
             <h2 className="text-2xl font-bold text-center mb-8">{group}</h2>
-            <div className="flex flex-wrap justify-center items-center gap-8">
+            <div className="flex flex-wrap justify-center items-center gap-[190px]">
               {members.map((member, index) => (
                 <div
                   key={member.id}
                   ref={(el) => (roleRefs.current[member.id] = el)}
-                  className="flex flex-col items-center space-y-4 opacity-0"
+                  className="flex flex-col items-center opacity-0"
                 >
                   <CardFlip
                     isFlipped={flipped[member.id] || false}
@@ -91,7 +77,8 @@ function TeamList() {
                     </div>
                   </CardFlip>
                   {/* Name (Not Flipped) */}
-                  <p className="text-lg font-bold text-white">{member.name}</p>
+                  <p className="text-3xl font-bold text-white">{member.name}</p>
+                  <p className="text-lg font-bold text-white">{member.role}</p>
                 </div>
               ))}
             </div>

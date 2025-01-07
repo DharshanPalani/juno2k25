@@ -91,7 +91,7 @@ function TeamList() {
                     </div>
                   </CardFlip>
                   {/* Name (Not Flipped) */}
-                  <p className="text-lg font-bold text-black">{member.name}</p>
+                  <p className="text-lg font-bold text-white">{member.name}</p>
                 </div>
               ))}
             </div>

@@ -84,7 +84,7 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href="https://instagram.com"
+                  href="https://instagram.com/juno_2k25"
                   className="hover:text-primary-500"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -105,7 +105,7 @@ function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-gray-800 text-center">
-          <p>&copy; 2024 Juno College Event. All rights reserved.</p>
+          <p>&copy; Juno 2025 Inter-College Event. All rights reserved.</p>
         </div>
       </div>
     </footer>

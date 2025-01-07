@@ -3,9 +3,6 @@ import React from "react";
 function HeroSection() {
   return (
     <div className="p-8 text-white mt-8">
-      <div className="bg-gray-700 w-full mb-[100px] h-[400px] flex items-center justify-center text-gray-400">
-        Banner Image
-      </div>
 
       <div className="flex flex-col md:flex-row items-center justify-between">
         {/* Mobile view */}
@@ -21,9 +18,8 @@ function HeroSection() {
         </div>
 
         {/* Logo section */}
-        <div className="bg-gray-700 w-full md:w-[475px] h-[300px] flex items-center justify-center text-gray-400">
-          Logo here
-        </div>
+        <img className="w-full md:w-[500px] h-[500px] flex items-center justify-center text-gray-400" src="./src/images/juno2k25_logo.png">
+        </img>
 
         {/* Desktop view */}
         <div className="hidden md:flex flex-col items-center">

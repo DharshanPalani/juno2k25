@@ -7,7 +7,7 @@ function HeroSection() {
 
       <div className="flex flex-col md:flex-row items-center justify-between">
         {/* Mobile view */}
-        <div className="md:hidden flex flex-col items-center w-full">
+        {/* <div className="md:hidden flex flex-col items-center w-full">
           <div className="text-[60px] font-extrabold tracking-wider bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text text-transparent">
             00:00:00:00
           </div>
@@ -16,7 +16,7 @@ function HeroSection() {
               Register Now
             </button>
           </div>
-        </div>
+        </div> */}
 
         {/* Logo section */}
         <img className="w-full md:w-[500px] h-[500px] flex items-center justify-center text-gray-400" src={Logo}>

@@ -24,7 +24,7 @@ function HeroSection() {
 
         {/* Desktop view */}
         <div className="hidden md:flex flex-col items-center">
-          <div className="text-[100px] font-extrabold tracking-wider bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text text-transparent">
+          <div className="text-[100px] font-extrabold tracking-wider bg-gradient-to-b from-goldish1 to-goldish2 bg-clip-text text-transparent">
             00:00:00:00
           </div>
           <div className="mt-8 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8 justify-center md:justify-start">

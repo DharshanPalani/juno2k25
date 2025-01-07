@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../images/juno2k25_logo.png"
 
 function HeroSection() {
   return (
@@ -18,7 +19,7 @@ function HeroSection() {
         </div>
 
         {/* Logo section */}
-        <img className="w-full md:w-[500px] h-[500px] flex items-center justify-center text-gray-400" src="./src/images/juno2k25_logo.png">
+        <img className="w-full md:w-[500px] h-[500px] flex items-center justify-center text-gray-400" src={Logo}>
         </img>
 
         {/* Desktop view */}

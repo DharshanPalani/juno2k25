@@ -1,33 +1,83 @@
-import React from "react";
-import Logo from "../images/juno2k25_logo.png"
+import React, { useState, useEffect } from "react";
+import Logo from "../images/juno2k25_logo.png";
 
 function HeroSection() {
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
+
+  useEffect(() => {
+    const targetDate = new Date("Jan 20, 2025").getTime();
+
+    const interval = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance <= 0) {
+        clearInterval(interval);
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      setTimeLeft({
+        days,
+        hours,
+        minutes,
+        seconds,
+      });
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <div className="p-8 text-white mt-8">
-
-      <div className="flex flex-col md:flex-row items-center justify-between">
-        {/* Mobile view */}
-        <div className="md:hidden flex flex-col items-center w-full">
-          <div className="text-[60px] font-extrabold tracking-wider bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text text-transparent">
-            00:00:00:00
-          </div>
-          <div className="mt-8 mb-12 flex flex-col items-center space-y-4">
-            <button className="bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white px-8 py-4 rounded-lg text-lg font-bold w-full md:w-auto hover:scale-105 hover:shadow-lg transition-all">
-              Register Now
-            </button>
-          </div>
-        </div>
-
+    <div className="p-4 sm:p-8 text-white mt-8">
+      <div className="flex flex-col md:flex-row items-center justify-center md:justify-between space-y-8 md:space-y-0">
         {/* Logo section */}
-        <img className="w-full md:w-[500px] h-[500px] flex items-center justify-center text-gray-400" src={Logo}>
-        </img>
+        <img
+          className="w-3/4 sm:w-1/2 md:w-[500px] h-auto"
+          src={Logo}
+          alt="Logo"
+        />
 
-        {/* Desktop view */}
-        <div className="hidden md:flex flex-col items-center">
-          <div className="text-[100px] font-extrabold tracking-wider bg-gradient-to-b from-goldish1 to-goldish2 bg-clip-text text-transparent">
-            00:00:00:00
+        {/* Countdown and Button section */}
+        <div className="flex flex-col items-center text-center">
+          <div className="font-extrabold tracking-wider bg-gradient-to-b from-goldish1 to-goldish2 bg-clip-text text-transparent">
+            <div className="grid grid-cols-4 gap-8 text-[clamp(2rem,8vw,6rem)]">
+              <div className="flex flex-col items-center">
+                <span className="font-mono text-6xl sm:text-8xl">
+                  {timeLeft.days.toString().padStart(2, '0')}
+                </span>
+                <span className="text-xl text-gray-400">Days</span>
+              </div>
+              <div className="flex flex-col items-center">
+                <span className="font-mono text-6xl sm:text-8xl">
+                  {timeLeft.hours.toString().padStart(2, '0')}
+                </span>
+                <span className="text-xl text-gray-400">Hours</span>
+              </div>
+              <div className="flex flex-col items-center">
+                <span className="font-mono text-6xl sm:text-8xl">
+                  {timeLeft.minutes.toString().padStart(2, '0')}
+                </span>
+                <span className="text-xl text-gray-400">Minutes</span>
+              </div>
+              <div className="flex flex-col items-center">
+                <span className="font-mono text-6xl sm:text-8xl">
+                  {timeLeft.seconds.toString().padStart(2, '0')}
+                </span>
+                <span className="text-xl text-gray-400">Seconds</span>
+              </div>
+            </div>
           </div>
-          <div className="mt-8 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8 justify-center md:justify-start">
+          <div className="mt-8 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
             <button className="bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white px-8 py-4 rounded-lg text-lg font-bold w-full md:w-auto hover:scale-105 hover:shadow-lg transition-all">
               Register Now
             </button>

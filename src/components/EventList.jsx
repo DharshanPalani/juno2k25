@@ -1,22 +1,10 @@
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
+import { techEvents, nonTechEvents } from "../data/eventData.js";
 
 function EventList({ category, onBackClick }) {
-  const techEvents = [
-    "Tech Event 1",
-    "Tech Event 2",
-    "Tech Event 3",
-    "Tech Event 4",
-    "Tech Event 5"
-  ];
-
-  const nonTechEvents = [
-    "Non-Tech 1",
-    "Non-Tech 2",
-    "Non-Tech 3",
-    "Non-Tech 4",
-    "Non-Tech 5"
-  ];
-
+  const navigate = useNavigate();
   const events = category === "tech" ? techEvents : nonTechEvents;
   const categoryTitle = category ? `${category} Events` : "Events";
 
@@ -24,48 +12,50 @@ function EventList({ category, onBackClick }) {
     window.scrollTo(0, 0);
   }, []);
 
+  const handleEventClick = (eventId) => {
+    navigate(`/event/${eventId}`);
+  };
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Main Content Area */}
-      <div className="flex-1 p-8 pt-8">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Event List</h1>
+      <div className="flex-1 p-4 sm:p-8">
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 text-center sm:text-left">{categoryTitle}</h1>
 
-        {/* Event List for Desktop (Horizontal Stack) */}
-        <div className="hidden md:block w-full p-4 space-x-4 flex overflow-x-auto">
-          <h2 className="text-2xl font-bold mb-6 text-white">{categoryTitle}</h2>
-          {events.map((event, index) => (
-            <div
-              key={index}
-              className="bg-blue-500 text-white rounded-md p-4 text-sm w-32 flex-shrink-0 mb-4"
+        {/* Event Cards with Animations */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+          {events.map((event) => (
+            <motion.div
+              key={event.id}
+              className="bg-black bg-opacity-70 shadow rounded-lg border border-yellow-500 cursor-pointer overflow-hidden"
+              onClick={() => handleEventClick(event.id)}
+              whileHover={{ scale: 1.05, rotate: 1 }}
+              whileTap={{ scale: 0.95 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: event.id * 0.05 }}
             >
-              {event}
-            </div>
+              <div className="h-40 bg-gray-800 flex items-center justify-center">
+                <span className="text-yellow-500">Image Placeholder</span>
+              </div>
+              <div className="p-4 sm:p-6">
+                <h2 className="text-lg sm:text-xl font-semibold text-yellow-500 mb-2 text-center sm:text-left">{event.name}</h2>
+                <p className="text-gray-300 text-sm sm:text-base text-center sm:text-left">Click to view details about {event.name}.</p>
+              </div>
+            </motion.div>
           ))}
         </div>
 
-        {/* Event List for Mobile (Vertical Stack)*/}
-        <div className="md:hidden flex flex-col mt-8">
-          <h2 className="text-xl font-bold mb-6">{categoryTitle}</h2>
-          <div className="flex overflow-x-auto space-x-4 py-4">
-            {events.map((event, index) => (
-              <div
-                key={index}
-                className="bg-blue-500 text-white rounded-md p-4 text-sm w-32 flex-shrink-0 mb-4"
-              >
-                {event}
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Back Button at Bottom Right */}
-        <div className="absolute bottom-8 right-8">
-          <button
+        {/* Back Button */}
+        <div className="mt-8 flex justify-center sm:justify-start">
+          <motion.button
             onClick={onBackClick}
-            className="bg-gray-700 text-white px-6 py-3 rounded-lg"
+            className="bg-yellow-500 text-black px-6 py-3 rounded-lg"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
-            Back to Events
-          </button>
+            Back to Categories
+          </motion.button>
         </div>
       </div>
     </div>

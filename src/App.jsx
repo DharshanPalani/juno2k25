@@ -3,7 +3,6 @@ import './index.css';
 import Navbar from './components/NavBar';
 import Footer from './components/Footer';
 import backgroundImage from './images/PC.png';
-
 import EventDetails from './components/EventDetails';
 
 // Pages for the Routes
@@ -13,6 +12,7 @@ import Events from './pages/Events';
 import Team from './pages/Team';
 
 function App() {
+
   return (
     <Router>
       <div

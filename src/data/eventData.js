@@ -6,6 +6,7 @@ export const techEvents = [
   { id: 5, name: "Tech Event 5", description: "Details for Tech Event 5", rules: "General rules for Tech Event 5." },
 ];
 
+
 export const nonTechEvents = [
   { id: 6, name: "Non-Tech 1", description: "Details for Non-Tech 1", rules: "General rules for Non-Tech 1." },
   { id: 7, name: "Non-Tech 2", description: "Details for Non-Tech 2", rules: "General rules for Non-Tech 2." },

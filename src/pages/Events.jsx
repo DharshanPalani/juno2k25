@@ -3,6 +3,8 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import EventList from '../components/EventList';
 
+
+
 function Events() {
   const location = useLocation();
   const navigate = useNavigate();

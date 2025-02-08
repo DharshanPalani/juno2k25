@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { techEvents, nonTechEvents } from "../data/eventData.js";
 
+
 function EventDetails() {
     const { id } = useParams();
     const navigate = useNavigate();

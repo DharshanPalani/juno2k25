@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Logo from "../images/juno2k25_logo.png";
 
 function HeroSection() {

@@ -11,6 +11,13 @@
 }
 
 @font-face {
+	font-family: 'Montern';
+	src: url('../src/fonts/Montern\ -\ \(Demo\)\ hanscostudio.com.ttf');
+	font-weight: normal;
+	font-size: normal;
+}
+
+@font-face {
 	font-family: 'BullStand';
 	src: url('../src/fonts/bullstandregular-rgojo.ttf') format('truetype');
 	font-weight: normal;

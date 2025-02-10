@@ -10,6 +10,13 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'BullStand';
+	src: url('../src/fonts/bullstandregular-rgojo.ttf') format('truetype');
+	font-weight: normal;
+	font-size: normal;
+}
+
 body {
 	font-family: 'LemonMilk', sans-serif;
 	margin: 0;
@@ -17,4 +24,6 @@ body {
 	box-sizing: border-box;
 }
 
-
+.nav-text {
+	font-family: 'BullStand', sans-serif;
+}

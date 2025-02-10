@@ -9,9 +9,9 @@ function Navbar() {
       <div className="container mx-auto flex items-center justify-between p-4">
         <Link
           to="/"
-          className="text-3xl font-bold tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500"
+          className="nav-text text-3xl font-bold tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500"
         >
-          Juno2k25
+          JUNO 2K25
         </Link>
 
         <div className="hidden md:flex space-x-6">

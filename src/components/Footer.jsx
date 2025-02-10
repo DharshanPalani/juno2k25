@@ -74,16 +74,6 @@ function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="https://twitter.com"
-                  className="hover:text-primary-500"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Twitter
-                </a>
-              </li>
-              <li>
-                <a
                   href="https://instagram.com/juno_2k25"
                   className="hover:text-primary-500"
                   target="_blank"

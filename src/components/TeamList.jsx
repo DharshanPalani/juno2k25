@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import CardFlip from "react-card-flip";
 import { teamGroups } from "../data/teamData";
 
+import tempImg from "../images/akash.jpg"
+
 function TeamList() {
   const roleRefs = useRef([]);
   const [flipped, setFlipped] = useState([]);
@@ -43,7 +45,7 @@ function TeamList() {
       <div className="mt-16 flex flex-wrap justify-center items-center gap-[50px]">
         {Object.entries(teamGroups).map(([group, members]) => (
           <div key={group}>
-            <h2 className="text-3xl font-bold text-center mb-8">{group}</h2>
+            <h2 className="bull-stand text-3xl font-bold text-center mt-16 mb-16">{group}</h2>
             <div className="flex flex-wrap justify-center items-center gap-[170px]">
               {members.map((member, index) => (
                 <div
@@ -62,12 +64,12 @@ function TeamList() {
 
                     {/* Back Side */}
                     <div className="bg-gray-700 w-[300px] h-[300px] flex items-center justify-center text-gray-400">
-                      <p className="text-lg font-bold text-white">Picture</p>
+                      <img className="" src={tempImg} />
                     </div>
                   </CardFlip>
                   {/* Name (Not Flipped) */}
-                  <p className="text-lg font-bold text-white">{member.name}</p>
-                  <p className="font-bold text-white">{member.role}</p>
+                  {/* <p className="text-lg font-bold text-white">{member.name}</p>
+                  <p className="font-bold text-white">{member.role}</p> */}
                 </div>
               ))}
             </div>

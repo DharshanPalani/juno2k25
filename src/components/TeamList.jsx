@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import CardFlip from "react-card-flip";
+import { teamGroups } from "../data/teamData";
 
 function TeamList() {
   const roleRefs = useRef([]);
@@ -37,18 +38,6 @@ function TeamList() {
     return () => clearTimeout(timer);
   }, []);
 
-  const teamGroups = {
-    MEMBERS: [
-      { role: "Role 1", name: "Member 1", id: 0 },
-      { role: "Role 2", name: "Member 2", id: 1 },
-      { role: "Role 3", name: "Member 3", id: 2 },
-      { role: "Role 4", name: "Member 4", id: 3 },
-      { role: "Role 5", name: "Member 5", id: 4 },
-      { role: "Role 6", name: "Member 6", id: 5 },
-      { role: "Role 7", name: "Member 7", id: 6 }
-    ]
-  };
-
   return (
     <div>
       <div className="mt-16 flex flex-wrap justify-center items-center gap-[50px]">
@@ -77,7 +66,7 @@ function TeamList() {
                     </div>
                   </CardFlip>
                   {/* Name (Not Flipped) */}
-                  <p className="text-3xl font-bold text-white">{member.name}</p>
+                  <p className="text-xl font-bold text-white">{member.name}</p>
                   <p className="text-lg font-bold text-white">{member.role}</p>
                 </div>
               ))}

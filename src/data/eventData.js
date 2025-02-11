@@ -1,5 +1,9 @@
 export const techEvents = [
-	{ id: 1, name: "PAPER PRESENTATION", description: "Details for Paper Presentation", rules: "General rules for Paper Presentation", day: 1 },
+	{ id: 1, 
+		name: "PAPER PRESENTATION", 
+		description: "Details for Paper Presentation", 
+		rules: "General rules for Paper Presentation", 
+		day: 1 },
 	{ id: 2, name: "DEBUGGING", description: "Details for DEBUGGING", rules: "General rules for DEBUGGING", day: 1 },
 	{ id: 3, name: "TECH CONNECTIONS", description: "Details for Tech Event 3", rules: "General rules for Tech Event 3.", day: 1 },
 	{ id: 4, name: "TECH CHARADES", description: "Details for Tech Event 4", rules: "General rules for Tech Event 4.", day: 1 },

@@ -2,42 +2,38 @@ import { useEffect, useRef, useState } from "react";
 import CardFlip from "react-card-flip";
 import { teamGroups } from "../data/teamData";
 
-import tempImg from "../images/akash.jpg"
+import tempImg from "../images/akash.jpg";
 
 function TeamList() {
   const roleRefs = useRef([]);
-  const [flipped, setFlipped] = useState([]);
+  const [flipped, setFlipped] = useState({});
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 
-    const timer = setTimeout(() => {
-      const handleScrollAnimation = () => {
-        roleRefs.current.forEach((element, index) => {
-          if (element) {
-            const observer = new IntersectionObserver(
-              ([entry]) => {
-                if (entry.isIntersecting) {
-                  element.classList.add("animate-fade-in-up");
-                  setFlipped((prev) => {
-                    const updated = [...prev];
-                    updated[index] = true;
-                    return updated;
-                  });
-                }
-              },
-              { threshold: 0.5 }
-            );
-            observer.observe(element);
-          }
+    // Create a single observer instance
+    const observer = new IntersectionObserver(
+      (entries) => {
+        setFlipped((prev) => {
+          const updated = { ...prev };
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              updated[entry.target.dataset.id] = true;
+              entry.target.classList.add("animate-fade-in-up");
+            }
+          });
+          return updated;
         });
-      };
+      },
+      { threshold: 0.5 }
+    );
 
-      window.addEventListener("scroll", handleScrollAnimation);
-      return () => window.removeEventListener("scroll", handleScrollAnimation);
-    }, 1000);
+    // Observe all elements
+    roleRefs.current.forEach((element) => {
+      if (element) observer.observe(element);
+    });
 
-    return () => clearTimeout(timer);
+    return () => observer.disconnect(); // Cleanup observer
   }, []);
 
   return (
@@ -45,18 +41,18 @@ function TeamList() {
       <div className="mt-16 flex flex-wrap justify-center items-center gap-[50px]">
         {Object.entries(teamGroups).map(([group, members]) => (
           <div key={group}>
-            <h2 className="bull-stand text-3xl font-bold text-center mt-16 mb-16">{group}</h2>
+            <h2 className="bull-stand text-3xl font-bold text-center mt-16 mb-16">
+              {group}
+            </h2>
             <div className="flex flex-wrap justify-center items-center gap-[170px]">
-              {members.map((member, index) => (
+              {members.map((member) => (
                 <div
                   key={member.id}
                   ref={(el) => (roleRefs.current[member.id] = el)}
+                  data-id={member.id}
                   className="flex flex-col items-center opacity-0"
                 >
-                  <CardFlip
-                    isFlipped={flipped[member.id] || false}
-                    flipDirection="horizontal"
-                  >
+                  <CardFlip isFlipped={flipped[member.id] || false} flipDirection="horizontal">
                     {/* Front Side */}
                     <div className="bg-gray-700 w-[300px] h-[300px] flex items-center justify-center text-gray-400">
                       {/* Role Image */}
@@ -64,12 +60,9 @@ function TeamList() {
 
                     {/* Back Side */}
                     <div className="bg-gray-700 w-[300px] h-[300px] flex items-center justify-center text-gray-400">
-                      <img className="" src={tempImg} />
+                      <img className="" src={tempImg} alt="Member" />
                     </div>
                   </CardFlip>
-                  {/* Name (Not Flipped) */}
-                  {/* <p className="text-lg font-bold text-white">{member.name}</p>
-                  <p className="font-bold text-white">{member.role}</p> */}
                 </div>
               ))}
             </div>

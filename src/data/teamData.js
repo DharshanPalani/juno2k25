@@ -10,7 +10,7 @@ export const teamGroups = {
 	],
 	"HEAD OF THE DEPARTMENT": [
 		{ role: "HEAD OF THE DEPARTMENT - B.CS. CS", name: "DR. R Rajini Surendaranath", id: 7, image: "/src/images/id/7.jpg" },
-		{ role: "HEAD OF THE DEPARTMENT - BCA", name: "Carolean Kalaiselvi", id: 8, image: "/src/images/id/8.jpg" },
+		{ role: "HEAD OF THE DEPARTMENT - BCA", name: "Caroline Kalaiselvi", id: 8, image: "/src/images/id/8.jpg" },
 		{ role: "HEAD OF THE DEPARTMENT - B.SC. IT", name: "DR. J Vanathi", id: 9, image: "/src/images/id/9.jpg" },
 		{ role: "HEAD OF THE DEPARTMENT - B.SC. DA", name: "DR. R Anand", id: 10, image: "/src/images/id/10.jpg" },
 		{ role: "HEAD OF THE DEPARTMENT - B.SC. VISCOM", name: "MS. B Brindha", id: 11, image: "/src/images/id/11.jpg" }

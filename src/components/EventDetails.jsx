@@ -95,7 +95,10 @@ function EventDetails() {
                         <h2 className="text-xl sm:text-2xl font-semibold text-yellow-500 mb-4">
                             General Rules
                         </h2>
-                        <p className="text-gray-300">{event.rules}</p>
+                        {/* <p className="text-gray-300">{event.rules}</p> */}
+                        <ol>
+
+                        </ol>
                     </motion.div>
                 </div>
 

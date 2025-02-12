@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import CardFlip from "react-card-flip";
 import { teamGroups } from "../data/teamData";
 
-import tempImg from "../images/akash.jpg";
+import jana from "../images/id/TEAM_HEADS/22_JANA.jpg"
 
 function TeamList() {
   const roleRefs = useRef([]);
@@ -60,7 +60,7 @@ function TeamList() {
 
                     {/* Back Side */}
                     <div className="bg-gray-700 w-[300px] h-[300px] flex items-center justify-center text-gray-400">
-                      <img className="" src={tempImg} alt="Member" />
+                      <img className="" src={member.image} alt={member.name} />
                     </div>
                   </CardFlip>
                 </div>

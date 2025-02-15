@@ -10,7 +10,7 @@ function HeroSection() {
   });
 
   useEffect(() => {
-    const targetDate = new Date("Mar 3, 2025").getTime();
+    const targetDate = new Date("Mar 6, 2025").getTime();
 
     const interval = setInterval(() => {
       const now = new Date().getTime();

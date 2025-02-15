@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import CardFlip from "react-card-flip";
 import { teamGroups } from "../data/teamData";
 
-import jana from "../images/id/TEAM_HEADS/22_JANA.jpg"
+// import jana from "../images/id/TEAM_HEADS/22_JANA.jpg"
 
 function TeamList() {
   const roleRefs = useRef([]);

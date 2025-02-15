@@ -81,16 +81,17 @@ function HeroSection() {
               </div>
             </div>
           </div>
-          <div className="mt-8 flex flex-col md:flex-col items-center space-y-16 md:space-y-0 md:space-x-8">
-            <button className="text-white px-16 py-4 rounded-lg text-lg font-bold w-full md:w-auto hover:scale-105 hover:shadow-lg transition-all" onClick={handleRegisterClick}>
+          <div className="mt-8 flex flex-col md:flex-col items-center space-y-0 md:space-y-0 md:space-x-8">
+            <br />
+            <button className="bg-yellow-500 text-black px-8 py-4 rounded-lg text-lg text-white px-16 py-4 rounded-lg text-lg font-bold md:w-auto hover:scale-105 hover:shadow-lg transition-all" onClick={handleRegisterClick}>
               Rule book
             </button>
             <br />
-            <button className="text-white px-16 py-4 rounded-lg text-lg font-bold w-full md:w-auto hover:scale-105 hover:shadow-lg transition-all" onClick={handleRegisterClick}>
+            <button className="bg-yellow-500 text-black px-8 py-4 rounded-lg text-lg text-white px-16 py-4 rounded-lg text-lg font-bold w-full md:w-auto hover:scale-105 hover:shadow-lg transition-all" onClick={handleRegisterClick}>
               Day-1
             </button>
             <br />
-            <button className="text-white px-16 py-4 rounded-lg text-lg font-bold w-full md:w-auto hover:scale-105 hover:shadow-lg transition-all" onClick={handleRegisterClick}>
+            <button className="bg-yellow-500 text-black px-8 py-4 rounded-lg text-lg text-white px-16 py-4 rounded-lg text-lg font-bold w-full md:w-auto hover:scale-105 hover:shadow-lg transition-all" onClick={handleRegisterClick}>
               Day-2
             </button>
           </div>

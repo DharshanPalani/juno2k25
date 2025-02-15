@@ -1,5 +1,3 @@
-import React from "react";
-
 function Footer() {
   return (
     <footer className="bg-transparent text-white py-12 mt-12">
@@ -89,7 +87,7 @@ function Footer() {
           <div>
             <h3 className="text-xl font-display mb-4">About Us</h3>
             <p className="mb-2">
-              Juno College Event is dedicated to organizing engaging and memorable events for our community. We aim to connect students and enhance campus life.
+              
             </p>
           </div>
         </div>

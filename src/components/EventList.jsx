@@ -52,8 +52,8 @@ function EventList({ category, onBackClick }) {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: event.id * 0.05 }}
               >
-                <div className="h-60 flex items-center justify-center rounded-md w-full">
-                  <img className="text-yellow-500 text-lg" src="http://velocityacademy.org/wp-content/uploads/2016/03/placeholder.jpg"/>
+                <div className="h-60 flex items-center justify-center rounded-md w-full" 
+			style = {{backgroundImage: `url(${event.image})`}}> 
                 </div>
                 <div className="flex flex-col items-center mt-4">
                   <h2 className="text-xl font-bold text-yellow-400 text-center">{event.name}</h2>

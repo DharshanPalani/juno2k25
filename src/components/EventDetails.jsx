@@ -1,14 +1,14 @@
 import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { techEvents, nonTechEvents } from "../data/eventData.js";
+import { day_1, day_2 } from "../data/eventData.js";
 
 
 function EventDetails() {
     const { id } = useParams();
     const navigate = useNavigate();
 
-    const allEvents = [...techEvents, ...nonTechEvents];
+    const allEvents = [...day_1, ...day_2];
     const event = allEvents.find((event) => event.id === parseInt(id));
 
     useEffect(() => {
@@ -97,7 +97,7 @@ function EventDetails() {
                         </h2>
                         {/* <p className="text-gray-300">{event.rules}</p> */}
                         <ol>
-				<li>{event.rules}</li>
+                            <li>{event.rules}</li>
                         </ol>
                     </motion.div>
                 </div>

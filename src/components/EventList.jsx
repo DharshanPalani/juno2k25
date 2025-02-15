@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { techEvents, nonTechEvents } from "../data/eventData.js";
+import { day_1, day_2 } from "../data/eventData.js";
 
 function EventList({ category, onBackClick }) {
   const navigate = useNavigate();
-  const events = category === "tech" ? techEvents : nonTechEvents;
+  const events = category === "tech" ? day_1 : day_2;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -19,14 +19,13 @@ function EventList({ category, onBackClick }) {
 
   return (
     <div className="p-8 min-h-screen flex flex-col">
-      <motion.h1
+      {/* <motion.h1
         className="text-4xl font-bold text-center text-yellow-500 mb-8"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        {category} Events
-      </motion.h1>
+      </motion.h1> */}
 
       {Object.keys(eventsByDay).map((day) => (
         <motion.div
@@ -52,8 +51,8 @@ function EventList({ category, onBackClick }) {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: event.id * 0.05 }}
               >
-                <div className="h-60 flex items-center justify-center rounded-md w-full" 
-			style = {{backgroundImage: `url(${event.image})`}}> 
+                <div className="h-60 flex items-center justify-center rounded-md w-full"
+                  style={{ backgroundImage: `url(${event.image})` }}>
                 </div>
                 <div className="flex flex-col items-center mt-4">
                   <h2 className="text-xl font-bold text-yellow-400 text-center">{event.name}</h2>

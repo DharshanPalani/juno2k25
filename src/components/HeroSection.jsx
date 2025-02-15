@@ -9,6 +9,10 @@ function HeroSection() {
     seconds: 0,
   });
 
+  const handleRegisterClick = () => {
+    alert("Redirected!!!")
+  }
+
   useEffect(() => {
     const targetDate = new Date("Mar 6, 2025").getTime();
 
@@ -67,19 +71,27 @@ function HeroSection() {
                 <span className="font-mono text-6xl sm:text-8xl">
                   {timeLeft.minutes.toString().padStart(2, '0')}
                 </span>
-                <span className="text-xl text-gray-400">Minutes</span>
+                <span className="text-xl text-gray-400">Min</span>
               </div>
               <div className="flex flex-col items-center">
                 <span className="font-mono text-6xl sm:text-8xl">
                   {timeLeft.seconds.toString().padStart(2, '0')}
                 </span>
-                <span className="text-xl text-gray-400">Seconds</span>
+                <span className="text-xl text-gray-400">Sec</span>
               </div>
             </div>
           </div>
-          <div className="mt-8 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
-            <button className="bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white px-8 py-4 rounded-lg text-lg font-bold w-full md:w-auto hover:scale-105 hover:shadow-lg transition-all">
-              Register Now
+          <div className="mt-8 flex flex-col md:flex-col items-center space-y-16 md:space-y-0 md:space-x-8">
+            <button className="text-white px-16 py-4 rounded-lg text-lg font-bold w-full md:w-auto hover:scale-105 hover:shadow-lg transition-all" onClick={handleRegisterClick}>
+              Rule book
+            </button>
+            <br />
+            <button className="text-white px-16 py-4 rounded-lg text-lg font-bold w-full md:w-auto hover:scale-105 hover:shadow-lg transition-all" onClick={handleRegisterClick}>
+              Day-1
+            </button>
+            <br />
+            <button className="text-white px-16 py-4 rounded-lg text-lg font-bold w-full md:w-auto hover:scale-105 hover:shadow-lg transition-all" onClick={handleRegisterClick}>
+              Day-2
             </button>
           </div>
         </div>

@@ -43,7 +43,7 @@ function EventList({ category, onBackClick }) {
             {eventsByDay[day].map((event) => (
               <motion.div
                 key={event.id}
-                className="bg-black bg-opacity-70 shadow-lg rounded-xl border border-yellow-500 p-6 w-96 h-80 flex flex-col cursor-pointer object-contain"
+                className="bg-black bg-opacity-70 shadow-lg rounded-xl border border-yellow-500 p-6 w-80 h-72 flex flex-col cursor-pointer object-contain"
                 onClick={() => navigate(`/event/${event.id}`)}
                 whileHover={{ scale: 1.07, rotate: 2 }}
                 whileTap={{ scale: 0.95 }}

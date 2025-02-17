@@ -57,8 +57,8 @@ function EventList({ category, onBackClick }) {
                   backgroundRepeat: "no-repeat",
                 }}
               >
-                <div className="flex flex-col items-center mt-4">
-                  <h2 className="text-xl font-bold text-yellow-400 text-center">
+                <div className="flex flex-col items-center mt-4 bg-black bg-opacity-70 shadow-lg rounded-3xl">
+                  <h2 className="text-xl font-bold text-white text-center">
                     {event.name}
                   </h2>
                 </div>

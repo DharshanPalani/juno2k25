@@ -4,6 +4,7 @@ import Navbar from './components/NavBar';
 import Footer from './components/Footer';
 import backgroundImage from './images/PC.png';
 import EventDetails from './components/EventDetails';
+import ScrollToTop from './components/ScrollToTop';
 
 // Pages for the Routes
 import Home from './pages/Home';
@@ -12,9 +13,9 @@ import Events from './pages/Events';
 import Team from './pages/Team';
 
 function App() {
-
   return (
     <Router>
+      <ScrollToTop />
       <div
         className="bg-fixed bg-gradient-to-r from-gray-900 to-gray-800 min-h-screen"
         style={{ backgroundImage: `url(${backgroundImage})` }}

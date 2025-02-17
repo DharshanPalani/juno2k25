@@ -120,8 +120,9 @@ function EventDetails() {
                     </motion.button>
 
                     {/* Register Button */}
-                    <motion.button
-                        onClick={handleRegisterClick}
+                    <motion.a
+                        href={event.form}
+                        target="_blank"
                         className="bg-green-500 text-black px-6 py-3 rounded-lg"
                         whileHover={{
                             scale: 1.1,
@@ -132,7 +133,7 @@ function EventDetails() {
                         transition={{ duration: 0.3 }}
                     >
                         Register Now
-                    </motion.button>
+                    </motion.a>
                 </div>
             </motion.div>
         </div>

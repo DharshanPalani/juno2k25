@@ -43,23 +43,29 @@ function EventList({ category, onBackClick }) {
             {eventsByDay[day].map((event) => (
               <motion.div
                 key={event.id}
-                className="bg-black bg-opacity-70 shadow-lg rounded-xl border border-yellow-500 p-6 w-96 h-80 flex flex-col cursor-pointer"
+                className="bg-black bg-opacity-70 shadow-lg rounded-xl border border-yellow-500 p-6 w-96 h-80 flex flex-col cursor-pointer object-contain"
                 onClick={() => navigate(`/event/${event.id}`)}
                 whileHover={{ scale: 1.07, rotate: 2 }}
                 whileTap={{ scale: 0.95 }}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: event.id * 0.05 }}
+                style={{
+                  backgroundImage: `url(${event.image})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}
               >
-                <div className="h-60 flex items-center justify-center rounded-md w-full"
-                  style={{ backgroundImage: `url(${event.image})` }}>
-                </div>
-                <div className="flex flex-col items-center mt-4">
-                  <h2 className="text-xl font-bold text-yellow-400 text-center">{event.name}</h2>
+                <div className="flex flex-col items-center mt-4 bg-black bg-opacity-70 shadow-lg rounded-3xl">
+                  <h2 className="text-xl font-bold text-white text-center">
+                    {event.name}
+                  </h2>
                 </div>
               </motion.div>
             ))}
           </div>
+
         </motion.div>
       ))}
 

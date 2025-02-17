@@ -6,11 +6,21 @@ function Footer() {
           {/* Contact Info */}
           <div>
             <h3 className="text-xl font-display mb-4">Contact Us</h3>
-            <p className="mb-2">📍 123 College Road, Campus XYZ</p>
-            <p className="mb-2">📱 123-456-7890</p>
-            <p>📧 event@college.edu</p>
+            <p className="mb-2">📍 161, Guru Nanak Salai, Velachery, Chennai - 600042 </p>
+            <p>📧 juno@gurunankcollege.edu.in</p>
           </div>
-
+          <div>
+            <h3>For quries</h3>
+            <br />
+            <p>Nirmal G (Chairman) </p>
+            <p> +91 74490 69661 </p>
+            <br />
+            <p> Mithun S (Vice-Chairman) </p>
+            <p> +91 7358 434078 </p>
+            <br />
+            <p> Lakshmi R (Vice-Chairman) </p>
+            <p> +91 95662 66967 </p>
+          </div>
           {/* Quick Links */}
           <div>
             <h3 className="text-xl font-display mb-4">Quick Links</h3>
@@ -81,14 +91,6 @@ function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
-
-          {/* About Us */}
-          <div>
-            <h3 className="text-xl font-display mb-4">About Us</h3>
-            <p className="mb-2">
-              
-            </p>
           </div>
         </div>
 

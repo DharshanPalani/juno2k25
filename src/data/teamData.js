@@ -1,12 +1,12 @@
 export const teamGroups = {
 	"CHIEF PATRONS": [
-		{ role: "GENERAL SECRETARY & CORRESPONDENT", name: "Manjit Singh Nayar", id: 0, image: "/images/id/0.jpg" },
-		{ role: "ADVISOR", name: "DR Marlene Morais", id: 1, image: "/images/id/1.jpg" },
-		{ role: "PRINCIPAL", name: "DR. T.K Avvai Kothai", id: 2, image: "/images/id/2.jpg" },
-		{ role: "COE, ASSOCIATE PROFESSOR, MCA", name: "DR P.V Kumaraguru", id: 3, image: "/images/id/3.jpg" },
-		{ role: "VICE PRINCIPAL", name: "DR Anitha Malisetty", id: 4, image: "/images/id/4.jpg" },
-		{ role: "DEAN- SCHOOL OF IR", name: "DR S Nirmala Devi", id: 5, image: "/images/id/5.jpg" },
-		{ role: "DEPUTY DEAN SCHOOL OF IT", name: "T Priyadharishini Rajakalyani", id: 6, image: "/images/id/6.jpg" }
+		{ role: "GENERAL SECRETARY & CORRESPONDENT", name: "Manjit Singh Nayar", id: 0, image: "/images/id/CHIEF_PATRONS/0_MANJIT_SINGH_NAYAR.jpg" },
+		{ role: "ADVISOR", name: "DR Marlene Morais", id: 1, image: "/images/id/CHIEF_PATRONS/1_MARLENE_MORAIS.jpg" },
+		{ role: "PRINCIPAL", name: "DR. T.K Avvai Kothai", id: 2, image: "/images/id/CHIEF_PATRONS/2_AVVAI_KOTHAI.jpg" },
+		{ role: "DEAN ACADAMICS", name: "DR. SWATI PALIWAL", id: 3, image: "/images/id/CHIEF_PATRONS/3_SWATI_PALIWAL.jpg" },
+		{ role: "COE, ASSOCIATE PROFESSOR, MCA", name: "DR. P. V. KUMARAGURU", id: 4, image: "/images/id/CHIEF_PATRONS/4_KUMARU_GURU.jpg" },
+		{ role: "VICE PRINCIPAL", name: "DR. ANITHA MALISETTY", id: 5, image: "/images/id/CHIEF_PATRONS/5_ANITHA_MALISETTY.jpg" },
+		{ role: "DEAN SCHOOL OF IT", name: "DR. S. NIRMALA DEVI", id: 6, image: "/images/id/CHIEF_PATRONS/6_NIRMAL_DEVI.jpg" }
 	],
 	"HEAD OF THE DEPARTMENT": [
 		{ role: "HEAD OF THE DEPARTMENT - B.CS. CS", name: "DR. R Rajini Surendaranath", id: 7, image: "/images/id/7.jpg" },
@@ -36,7 +36,7 @@ export const teamGroups = {
 		{ role: "ACCOUNTANCY HEAD", name: "Reshma B", id: 26, image: "/images/id/TEAM_HEADS/26_RESHMA.jpg" },
 		{ role: "JUDGE MAINTENANCE HEAD", name: "Kalaiselvi A", id: 27, image: "/images/id/TEAM_HEADS/27_KALAISELVI.jpg" },
 		{ role: "MARETING HEAD", name: "Dharshini P", id: 28, image: "/images/id/TEAM_HEADS/28_DHARSHINI.jpg" },
-		{ role: "WEB DEVELOPMENT HEAD", name: "Dharshan P", id: 29, image: "/images/id/29.jpg" },
+		{ role: "WEB DEVELOPMENT HEAD", name: "Dharshan P", id: 29, image: "/images/id/TEAM_HEADS/29_DHARSHAN.jpg" },
 		// { role: "HELP DESK HEAD", name: "", id: 30, image: "/images/id/30.jpg" },
 		{ role: "REFRESHMENT HEAD", name: "Sakthi S", id: 31, image: "/images/id/TEAM_HEADS/31_SAKTHI.jpg" },
 		{ role: "REFRESHMENT HEAD", name: "", id: 55, image: "/images/id/TEAM_HEADS/55_VAMSIDHARAN.jpg" },

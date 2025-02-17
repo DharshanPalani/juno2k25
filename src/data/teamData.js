@@ -9,11 +9,11 @@ export const teamGroups = {
 		{ role: "DEAN SCHOOL OF IT", name: "DR. S. NIRMALA DEVI", id: 6, image: "/images/id/CHIEF_PATRONS/6_NIRMAL_DEVI.jpg" }
 	],
 	"HEAD OF THE DEPARTMENT": [
-		{ role: "HEAD OF THE DEPARTMENT - MCA", name: "DR. R Anand", id: 7, image: "/images/id/7.jpg" },
-		{ role: "HEAD OF THE DEPARTMENT - BCA", name: "Ms. R. Caroline Kalaiselvi", id: 8, image: "/images/id/8.jpg" },
-		{ role: "HEAD OF THE DEPARTMENT - B.SC. CS ", name: "Dr. J. Vanathi", id: 9, image: "/images/id/9.jpg" },
-		{ role: "HEAD OF THE DEPARTMENT - B.SC. IT", name: "Dr. R. Rajini Surendranath", id: 10, image: "/images/id/10.jpg" },
-		{ role: "HEAD OF THE DEPARTMENT - B.SC. VISCOM", name: "MS. B Brindha", id: 11, image: "/images/id/11.jpg" }
+		{ role: "HEAD OF THE DEPARTMENT - MCA", name: "DR. R Anand", id: 7, image: "/images/id/HEAD_OF_THE_DEPARTMENT/7_ANAND.jpg" },
+		{ role: "HEAD OF THE DEPARTMENT - BCA", name: "Ms. R. Caroline Kalaiselvi", id: 8, image: "/images/id/HEAD_OF_THE_DEPARTMENT/8_CAROLINE_KALAISELVI.jpg" },
+		{ role: "HEAD OF THE DEPARTMENT - B.SC. CS ", name: "Dr. J. Vanathi", id: 9, image: "/images/id/HEAD_OF_THE_DEPARTMENT/9_VANATHI.jpg" },
+		{ role: "HEAD OF THE DEPARTMENT - B.SC. IT", name: "Dr. R. Rajini Surendranath", id: 10, image: "/images/id/HEAD_OF_THE_DEPARTMENT/10_RAJINI_SURENDRANATH.jpg" },
+		{ role: "HEAD OF THE DEPARTMENT - B.SC. VISCOM", name: "MS. B Brindha", id: 11, image: "/images/id/HEAD_OF_THE_DEPARTMENT/11_BRINDHA.jpg" }
 	],
 	"CORE TEAM": [
 		{ role: "Chairman", name: "Nirmal G", id: 12, image: "/images/id/CORE_TEAM/12_NIRMAL.jpg" },

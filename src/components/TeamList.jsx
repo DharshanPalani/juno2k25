@@ -38,7 +38,7 @@ function TeamList() {
 
   return (
     <div>
-      <div className="mt-16 flex flex-wrap justify-center items-center gap-[50px]">
+      <div className="flex flex-wrap justify-center items-center gap-[50px]">
         {Object.entries(teamGroups).map(([group, members]) => (
           <div key={group}>
             <h2 className="bull-stand text-3xl font-bold text-center mt-16 mb-16">

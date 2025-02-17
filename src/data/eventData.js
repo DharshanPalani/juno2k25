@@ -1,5 +1,3 @@
-import { form } from "framer-motion/client";
-
 export const day_1 = [
 	{
 		id: 1,
@@ -38,7 +36,7 @@ export const day_1 = [
 		day: 1
 	},
 	{
-		id: 6,
+		id: 5,
 		name: "POSTER MAKING",
 		description: "Details for POSTER MAKING",
 		rules: "General rules for POSTER MAKING",
@@ -56,7 +54,7 @@ export const day_1 = [
 		day: 1
 	},
 	{
-		id: 9, name: "GROUP DANCE",
+		id: 7, name: "GROUP DANCE",
 		description: "Details for GROUP DANCE",
 		rules: "General rules for GROUP DANCE.",
 		image: "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
@@ -64,7 +62,7 @@ export const day_1 = [
 		day: 1
 	},
 	{
-		id: 10,
+		id: 8,
 		name: "MOVIE QUIZ",
 		description: "Details for MOVIE QUIZ",
 		rules: "General rules for MOVIE QUIZ",
@@ -73,7 +71,7 @@ export const day_1 = [
 		day: 1
 	},
 	{
-		id: 11,
+		id: 9,
 		name: "COOKING WITHOUT FIRE",
 		description: "Details for COOKING WITHOUT FIRE",
 		rules: "General rules for COOKING WITHOUT FIRE",
@@ -88,7 +86,7 @@ export const day_1 = [
 
 export const day_2 = [
 	{
-		id: 7,
+		id: 10,
 		name: "RAMP WALK",
 		description: "Details for RAMP WALK",
 		rules: "General rules for RAMP WALK",
@@ -97,7 +95,7 @@ export const day_2 = [
 		day: 2
 	},
 	{
-		id: 8,
+		id: 11,
 		name: "IPL Auction",
 		description: "Details for IPL Auction",
 		rules: "General rules for IPL Auction",
@@ -124,7 +122,7 @@ export const day_2 = [
 		day: 2
 	},
 	{
-		id: 5,
+		id: 14,
 		name: "TECH BINGO",
 		description: "Details for Tech Event 5",
 		rules: "General rules for Tech Event 5.",
@@ -133,7 +131,7 @@ export const day_2 = [
 		day: 2
 	},
 	{
-		id: 5,
+		id: 15,
 		name: "TECH BINGO",
 		description: "Details for Tech Event 5",
 		rules: "General rules for Tech Event 5.",
@@ -142,7 +140,7 @@ export const day_2 = [
 		day: 2
 	},
 	{
-		id: 7,
+		id: 16,
 		name: "TECH TREASURE HUNT",
 		description: "Details for TECH TREASURE HUNT",
 		rules: "General rules for POSTER MAKING",

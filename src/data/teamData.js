@@ -6,7 +6,8 @@ export const teamGroups = {
 		{ role: "DEAN ACADAMICS", name: "DR. SWATI PALIWAL", id: 3, image: "/images/id/CHIEF_PATRONS/3_SWATI_PALIWAL.jpg" },
 		{ role: "COE, ASSOCIATE PROFESSOR, MCA", name: "DR. P. V. KUMARAGURU", id: 4, image: "/images/id/CHIEF_PATRONS/4_KUMARU_GURU.jpg" },
 		{ role: "VICE PRINCIPAL", name: "DR. ANITHA MALISETTY", id: 5, image: "/images/id/CHIEF_PATRONS/5_ANITHA_MALISETTY.jpg" },
-		{ role: "DEAN SCHOOL OF IT", name: "DR. S. NIRMALA DEVI", id: 6, image: "/images/id/CHIEF_PATRONS/6_NIRMAL_DEVI.jpg" }
+		{ role: "DEAN SCHOOL OF IT", name: "DR. S. NIRMALA DEVI", id: 6, image: "/images/id/CHIEF_PATRONS/6_NIRMAL_DEVI.jpg" },
+		{ role: "DEPUTY DEAN - SCHOOL OF IT", name: "T. PRIYADHARSHINI RAJAKALYANI", id: 57, image: "/images/id/CHIEF_PATRONS/57_PRIYADHARSHINI_RAJAKALYANI.jpg" }
 	],
 	"HEAD OF THE DEPARTMENT": [
 		{ role: "HEAD OF THE DEPARTMENT - MCA", name: "DR. R Anand", id: 7, image: "/images/id/HEAD_OF_THE_DEPARTMENT/7_ANAND.jpg" },

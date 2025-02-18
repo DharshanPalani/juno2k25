@@ -72,17 +72,6 @@ export const day_1 = [
 		day: 1
 	},
 	{
-		id: 7, name: "GROUP DANCE",
-		description: "Details for GROUP DANCE",
-		venue: "MAIN AUDITORIUM",
-		date: "6 MARCH 2025, @9:00 AM",
-		contact: "VISHNU - 70925 65281 | DEVANAND - 93847 08464",
-		image: "/images/event_image/day_1/7_group_dance.jpg",
-		form: "https://docs.google.com/forms/d/e/1FAIpQLScX6bKYLR2zxUwtMQqFlWgquP6WWxKXmhUOMfX3s_wfVEFEiw/viewform",
-		rule: "/images/broucher_image/7.jpg",
-		day: 1
-	},
-	{
 		id: 8,
 		name: "MOVIE QUIZ",
 		description: "Details for MOVIE QUIZ",
@@ -106,12 +95,20 @@ export const day_1 = [
 		rule: "/images/broucher_image/9.jpg",
 		day: 1
 	}
-
-	// 
-
 ];
 
 export const day_2 = [
+	{
+		id: 7, name: "GROUP DANCE",
+		description: "Details for GROUP DANCE",
+		venue: "MAIN AUDITORIUM",
+		date: "7 MARCH 2025, @9:00 AM",
+		contact: "VISHNU - 70925 65281 | DEVANAND - 93847 08464",
+		image: "/images/event_image/day_1/7_group_dance.jpg",
+		form: "https://docs.google.com/forms/d/e/1FAIpQLSfUoaxuqk1wO4Ve5tPTvdlhQwexs2g1jhIaQzKtmdKYjfx1IA/viewform",
+		rule: "/images/broucher_image/7.jpg",
+		day: 2
+	},
 	{
 		id: 10,
 		name: "RAMP WALK",

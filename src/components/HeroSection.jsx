@@ -84,20 +84,29 @@ function HeroSection() {
               </div>
             </div>
           </div>
-          <div className="mt-8 flex flex-col md:flex-col items-center space-y-0 md:space-y-0 md:space-x-8">
+          <div className="mt-8 flex flex-col md:flex-col items-center space-y-0">
             <br />
-            <a className="bg-yellow-500 text-black px-8 py-4 rounded-lg text-lg text-white px-16 py-4 rounded-lg text-lg font-bold md:w-auto hover:scale-105 hover:shadow-lg transition-all" href="https://drive.google.com/file/d/1fhKMbjfgYWQ5Gc1eCiO0Qr1jSlnIAvjh/view" target="_blank">
+            <a
+              className="bg-gradient-to-r from-goldish1 to-goldish2 text-black px-16 py-4 rounded-lg text-[17px] font-bold md:w-auto hover:scale-105 hover:shadow-lg transition-all"
+              href="https://drive.google.com/file/d/1fhKMbjfgYWQ5Gc1eCiO0Qr1jSlnIAvjh/view"
+              target="_blank"
+            >
               Rule book
             </a>
             <br />
-            <a className="bg-yellow-500 text-black px-8 py-4 rounded-lg text-lg text-white px-16 py-4 rounded-lg text-lg font-bold w-full md:w-auto hover:scale-105 hover:shadow-lg transition-all" href="https://docs.google.com/forms/d/e/1FAIpQLScX6bKYLR2zxUwtMQqFlWgquP6WWxKXmhUOMfX3s_wfVEFEiw/viewform" target="_blank">
-              Day-1 Registration form
-            </a>
+            <a
+              className="bg-gradient-to-r from-goldish1 to-goldish2 text-black px-16 py-4 rounded-lg text-[17px] font-bold w-full md:w-auto hover:scale-105 hover:shadow-lg transition-all"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScX6bKYLR2zxUwtMQqFlWgquP6WWxKXmhUOMfX3s_wfVEFEiw/viewform"
+              target="_blank"
+            >Day-1 Registration form</a>
             <br />
-            <a className="bg-yellow-500 text-black px-8 py-4 rounded-lg text-lg text-white px-16 py-4 rounded-lg text-lg font-bold w-full md:w-auto hover:scale-105 hover:shadow-lg transition-all" href="https://docs.google.com/forms/d/e/1FAIpQLSfUoaxuqk1wO4Ve5tPTvdlhQwexs2g1jhIaQzKtmdKYjfx1IA/viewform" target="_blank">
-              Day-2 Registration form
-            </a>
+            <a
+              className="bg-gradient-to-r from-goldish1 to-goldish2 text-black px-16 py-4 rounded-lg text-[17px] font-bold w-full md:w-auto hover:scale-105 hover:shadow-lg transition-all"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfUoaxuqk1wO4Ve5tPTvdlhQwexs2g1jhIaQzKtmdKYjfx1IA/viewform"
+              target="_blank"
+            >Day-2 Registration form</a>
           </div>
+
         </div>
       </div>
 

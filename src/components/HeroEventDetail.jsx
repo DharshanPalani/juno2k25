@@ -11,35 +11,34 @@ const staggerContainer = {
     visible: { opacity: 1, transition: { staggerChildren: 0.1 } },
 };
 
-const formatNumber = (num, isPrize) => {
-    if (isPrize) return num + "k+";
+const formatNumber = (num, isPrize, isStall) => {
+    if (isPrize) return `${num}k+`;
+    if (isStall) return `${num}+`;
     return num;
 };
 
-function Counter({ endValue, isPrize, startCounting }) {
+function Counter({ endValue, isPrize, isStall, startCounting }) {
     const [count, setCount] = useState(0);
-    const [duration] = useState(5);
+    const duration = 5;
 
     useEffect(() => {
-        let start = count;
-        const end = endValue;
-        const incrementTime = Math.abs(Math.floor(duration * 1000 / endValue));
-
         if (!startCounting) return;
 
+        let start = 0;
+        const incrementTime = Math.floor((duration * 1000) / endValue);
+
         const counterInterval = setInterval(() => {
-            if (start < end) {
-                start++;
-                setCount(start);
-            } else {
+            setCount((prev) => {
+                if (prev < endValue) return prev + 1;
                 clearInterval(counterInterval);
-            }
+                return prev;
+            });
         }, incrementTime);
 
         return () => clearInterval(counterInterval);
-    }, [endValue, duration, startCounting, count]);
+    }, [endValue, startCounting]);
 
-    return <motion.h6 className="text-4xl font-bold lg:text-5xl xl:text-6xl text-gold">{formatNumber(count, isPrize)}</motion.h6>;
+    return <motion.h6 className="text-4xl font-bold lg:text-5xl xl:text-6xl text-gold">{formatNumber(count, isPrize, isStall)}</motion.h6>;
 }
 
 function HeroEventDetail() {
@@ -48,56 +47,34 @@ function HeroEventDetail() {
 
     useEffect(() => {
         const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        setStartCounting(true);
-                    } else {
-                        setStartCounting(false);
-                    }
-                });
-            },
+            ([entry]) => setStartCounting(entry.isIntersecting),
             { threshold: 0.2 }
         );
 
-        if (sectionRef.current) {
-            observer.observe(sectionRef.current);
-        }
+        if (sectionRef.current) observer.observe(sectionRef.current);
 
-        return () => {
-            if (sectionRef.current) {
-                observer.unobserve(sectionRef.current);
-            }
-        };
+        return () => observer.disconnect();
     }, []);
 
+    const eventStats = [
+        { label: "Days", value: 2, isPrize: false, isStall: false },
+        { label: "Events", value: 15, isPrize: false, isStall: false },
+        { label: "Prizes", value: 100, isPrize: true, isStall: false },
+        { label: "Stalls", value: 20, isPrize: false, isStall: true },
+    ];
+
     return (
-        <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={staggerContainer}
-            className="space-y-10 py-10"
-            ref={sectionRef}
-        >
+        <motion.div initial="hidden" animate="visible" variants={staggerContainer} className="space-y-10 py-10" ref={sectionRef}>
             <motion.div variants={fadeInUp} className="flex items-center justify-center">
-                <h1 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center font-bold pt-20 capitalize">
+                <h1 className="text-white font-black text-center font-bold pt-20 capitalize md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
                     Events
                 </h1>
             </motion.div>
             <div className="px-0 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-0">
-                <motion.div variants={staggerContainer} className="grid grid-cols-2 row-gap-8 md:grid-cols-4 gap-8">
-                    {[
-                        { label: "Days", value: 2, isPrize: false },
-                        { label: "Events", value: 14, isPrize: false },
-                        { label: "Prizes", value: 100, isPrize: true },
-                        { label: "Stalls", value: 20, isPrize: false },
-                    ].map((item, index) => (
-                        <motion.div
-                            key={index}
-                            variants={fadeInUp}
-                            className={`text-center ${index % 2 === 0 ? "md:border-r" : ""} last:border-none`}
-                        >
-                            <Counter endValue={item.value} isPrize={item.isPrize} startCounting={startCounting} />
+                <motion.div variants={staggerContainer} className="grid grid-cols-2 gap-8 md:grid-cols-4">
+                    {eventStats.map((item, index) => (
+                        <motion.div key={index} variants={fadeInUp} className={`text-center ${index % 2 === 0 ? "md:border-r" : ""}`}>
+                            <Counter endValue={item.value} isPrize={item.isPrize} isStall={item.isStall} startCounting={startCounting} />
                             <p className="text-sm font-medium tracking-widest text-gold uppercase lg:text-base">
                                 {item.label}
                             </p>

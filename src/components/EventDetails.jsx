@@ -62,7 +62,7 @@ function EventDetails() {
                             <h3 className="text-xl sm:text-2xl font-semibold text-yellow-500 mb-4">
                                 Event Information
                             </h3>
-                            <table className="w-full text-gray-300">
+                            <table className="w-full h-96 text-gray-300">
                                 <tbody>
                                     <tr>
                                         <td className="py-2 font-semibold">Venue:</td>
@@ -76,10 +76,10 @@ function EventDetails() {
                                         <td className="py-2 font-semibold">Contact:</td>
                                         <td className="py-2">{event.contact}</td>
                                     </tr>
-                                    <tr>
+                                    {/* <tr>
                                         <td className="py-2 font-semibold">Additional Info:</td>
                                         <td className="py-2">{event.additionalInfo}</td>
-                                    </tr>
+                                    </tr> */}
                                 </tbody>
                             </table>
                         </motion.div>
@@ -92,13 +92,14 @@ function EventDetails() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5, delay: 0.4 }}
                     >
-                        <h2 className="text-xl sm:text-2xl font-semibold text-yellow-500 mb-4">
+                        {/* <h2 className="text-xl sm:text-2xl font-semibold text-yellow-500 mb-4">
                             General Rules
-                        </h2>
+                        </h2> */}
+                        <img src={event.rule} alt="" />
                         {/* <p className="text-gray-300">{event.rules}</p> */}
-                        <ol>
+                        {/* <ol>
                             <li>{event.rules}</li>
-                        </ol>
+                        </ol> */}
                     </motion.div>
                 </div>
 

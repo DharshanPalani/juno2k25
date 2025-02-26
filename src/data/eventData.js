@@ -6,7 +6,7 @@ export const day_1 = [
 		venue: "GURU RAMDAS A/C SEMINAR HALL",
 		date: "6 MARCH 2025, @10:30 AM",
 		contact: "SHIVV - 78128 46294 | HANANIAH - 63821 75981",
-		image: "/images/event_image/day_1/1_paper_presentation.jpg",
+		image: "/images/event_image/day_1/1_paper_presentation.JPG",
 		form: "https://docs.google.com/forms/d/e/1FAIpQLScX6bKYLR2zxUwtMQqFlWgquP6WWxKXmhUOMfX3s_wfVEFEiw/viewform",
 		rule: "/images/broucher_image/1.jpg",
 		day: 1
@@ -18,7 +18,7 @@ export const day_1 = [
 		venue: "T2 & MCA LAB",
 		date: "6 MARCH 2025, @11:00 AM",
 		contact: "PRAVEEN KUMAR K - 87543 47309 | RAHUL - 90252 98848",
-		image: "/images/event_image/day_1/2_debugging.jpg",
+		image: "/images/event_image/day_1/2_debugging.JPG",
 		form: "https://docs.google.com/forms/d/e/1FAIpQLScX6bKYLR2zxUwtMQqFlWgquP6WWxKXmhUOMfX3s_wfVEFEiw/viewform",
 		rule: "/images/broucher_image/2.jpg",
 		day: 1
@@ -30,7 +30,7 @@ export const day_1 = [
 		venue: "GURU RAMDAS BLOCK LAB - 6",
 		date: "6 MARCH 2025, @1:30 PM",
 		contact: "SHYAM - 93637 10307 | AKASH R - 74486 57940",
-		image: "/images/event_image/day_1/3_tech_connection.png",
+		image: "/images/event_image/day_1/3_tech_connection.JPG",
 		form: "https://docs.google.com/forms/d/e/1FAIpQLScX6bKYLR2zxUwtMQqFlWgquP6WWxKXmhUOMfX3s_wfVEFEiw/viewform",
 		rule: "/images/broucher_image/3.jpg",
 		day: 1
@@ -54,7 +54,7 @@ export const day_1 = [
 		venue: "MULTIMEDIA LAB",
 		date: "6 MARCH 2025, @10:30 AM",
 		contact: "SANJAY B - 93846 40552 | MOHANA VARSHINI - 85248 46820",
-		image: "/images/event_image/day_1/5_poster_making.jpg",
+		image: "/images/event_image/day_1/5_poster_making.JPG",
 		form: "https://docs.google.com/forms/d/e/1FAIpQLScX6bKYLR2zxUwtMQqFlWgquP6WWxKXmhUOMfX3s_wfVEFEiw/viewform",
 		rule: "/images/broucher_image/5.jpg",
 		day: 1
@@ -66,7 +66,7 @@ export const day_1 = [
 		venue: "FOOTBALL GROUND",
 		date: "6 MARCH 2025, @9:00 AM",
 		contact: "THIRUMAL - 73585 78193 | PANDIA RAJ - 7200 67758",
-		image: "/images/event_image/day_1/6_box_cricket.jpg",
+		image: "/images/event_image/day_1/6_box_cricket.JPG",
 		form: "https://docs.google.com/forms/d/e/1FAIpQLScX6bKYLR2zxUwtMQqFlWgquP6WWxKXmhUOMfX3s_wfVEFEiw/viewform",
 		rule: "/images/broucher_image/6.jpg",
 		day: 1
@@ -90,7 +90,7 @@ export const day_1 = [
 		venue: "GURU TEG BAHADUR AUDITORIUM",
 		date: "6 MARCH 2025, @12:30 PM",
 		contact: "KAAVIYA - 95149 09505 | THEJASHREE - 89390 03481",
-		image: "/images/event_image/day_1/9_cooking_without_fire.jpg",
+		image: "/images/event_image/day_1/9_cooking_without_fire.JPG",
 		form: "https://docs.google.com/forms/d/e/1FAIpQLScX6bKYLR2zxUwtMQqFlWgquP6WWxKXmhUOMfX3s_wfVEFEiw/viewform",
 		rule: "/images/broucher_image/9.jpg",
 		day: 1
@@ -104,7 +104,7 @@ export const day_2 = [
 		venue: "MAIN AUDITORIUM",
 		date: "7 MARCH 2025, @9:00 AM",
 		contact: "VISHNU - 70925 65281 | DEVANAND - 93847 08464",
-		image: "/images/event_image/day_1/7_group_dance.jpg",
+		image: "/images/event_image/day_2/7_group_dance.JPG",
 		form: "https://docs.google.com/forms/d/e/1FAIpQLSfUoaxuqk1wO4Ve5tPTvdlhQwexs2g1jhIaQzKtmdKYjfx1IA/viewform",
 		rule: "/images/broucher_image/7.jpg",
 		day: 2
@@ -116,7 +116,7 @@ export const day_2 = [
 		venue: "MAIN AUDITORIUM",
 		date: "7 MARCH 2025, @12:00 PM",
 		contact: "MAHASRI - 78100 72166 | MERLINE JAMES - 84335 29348",
-		image: "/images/event_image/day_2/10_ramp_walk.jpg",
+		image: "/images/event_image/day_2/10_ramp_walk.JPG",
 		form: "https://docs.google.com/forms/d/e/1FAIpQLSfUoaxuqk1wO4Ve5tPTvdlhQwexs2g1jhIaQzKtmdKYjfx1IA/viewform",
 		rule: "/images/broucher_image/10.jpg",
 		day: 2

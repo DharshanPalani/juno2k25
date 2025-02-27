@@ -5,6 +5,7 @@ import EventList from '../components/EventList';
 
 
 
+
 function Events() {
   const location = useLocation();
   const navigate = useNavigate();
@@ -55,7 +56,7 @@ function Events() {
           >
             <div className="h-40 flex items-center justify-center">
               <span className="text-yellow-500">Day 1</span>
-							
+
             </div>
             <div className="p-4 sm:p-6">
               <p className="text-gray-300 text-sm sm:text-base text-center">Click to view Day 1 events</p>

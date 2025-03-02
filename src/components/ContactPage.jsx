@@ -50,7 +50,7 @@ const ContactPage = () => {
                 {/* Location Button */}
                 <div className="w-full lg:w-1/2 p-6 flex flex-col">
                     <button
-                        onClick={() => window.open('https://www.google.com/maps/place/YOUR_LOCATION', '_blank')}
+                        onClick={() => window.open('https://maps.app.goo.gl/6VFGgjMdhkFgiiSU6', '_blank')}
                         className="w-full p-16 bg-gradient-to-r from-[#ffd25b] to-[#f8b13d] text-white rounded-lg hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center justify-center"
                     >
                         <FaMapMarkerAlt className="mr-3 text-3xl" /> {/* Icon */}

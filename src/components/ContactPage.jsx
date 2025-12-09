@@ -1,6 +1,3 @@
-import React from "react";
-import { FaMapMarkerAlt } from "react-icons/fa";
-
 const ContactPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -50,8 +47,7 @@ const ContactPage = () => {
             }
             className="w-full p-16 bg-gradient-to-r from-[#ffd25b] to-[#f8b13d] text-white rounded-lg hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center justify-center"
           >
-            <FaMapMarkerAlt className="mr-3 text-3xl" />
-            View Our Location
+            Our Location
           </button>
         </div>
       </div>

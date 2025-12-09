@@ -1,16 +1,15 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './index.css';
-import Navbar from './components/NavBar';
-import Footer from './components/Footer';
-import backgroundImage from './images/PC.png';
-import EventDetails from './components/EventDetails';
-import ScrollToTop from './components/ScrollToTop';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./index.css";
+import Navbar from "./components/NavBar";
+import Footer from "./components/Footer";
+import backgroundImage from "./images/PC.png";
+import EventDetails from "./components/EventDetails";
+import ScrollToTop from "./components/ScrollToTop";
 
-// Pages for the Routes
-import Home from './pages/Home';
-import Contact from './pages/Contact';
-import Events from './pages/Events';
-import Team from './pages/Team';
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import Events from "./pages/Events";
+import Team from "./pages/Team";
 
 function App() {
   return (

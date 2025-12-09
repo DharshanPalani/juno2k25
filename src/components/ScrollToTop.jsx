@@ -2,16 +2,16 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 const ScrollToTop = () => {
-    const location = useLocation();
-    const { pathname, search } = location; // Get both pathname & query params
+  const location = useLocation();
+  const { pathname, search } = location;
 
-    useEffect(() => {
-        setTimeout(() => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        }, 100); // Tiny delay ensures content loads first
-    }, [pathname, search]); // Triggers on any URL change (path OR query)
+  useEffect(() => {
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, 100);
+  }, [pathname, search]);
 
-    return null;
+  return null;
 };
 
 export default ScrollToTop;

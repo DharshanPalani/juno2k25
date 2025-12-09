@@ -3,14 +3,12 @@ function Footer() {
     <footer className="text-white py-8 sm:py-12 mt-8 sm:mt-12 flex items-center justify-center">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-          {/* Contact Info */}
           <div className="flex flex-col space-y-3">
             <h3 className="text-lg sm:text-xl font-display">Contact Us</h3>
             <p>📍 161, Guru Nanak Salai, Velachery, Chennai - 600042</p>
             <p>📧 juno@gurunankcollege.edu.in</p>
           </div>
 
-          {/* Queries */}
           <div className="flex flex-col space-y-3">
             <h3 className="text-lg sm:text-xl font-display">For Queries</h3>
             {[
@@ -25,7 +23,6 @@ function Footer() {
             ))}
           </div>
 
-          {/* Quick Links - Left on Mobile, Centered on Larger Screens */}
           <div className="flex flex-col space-y-3 items-start sm:items-center text-left sm:text-center">
             <h3 className="text-lg sm:text-xl font-display">Quick Links</h3>
             <ul className="space-y-2">
@@ -51,7 +48,6 @@ function Footer() {
             </ul>
           </div>
 
-          {/* Follow Us - Big Instagram Box */}
           <div className="flex flex-col space-y-3 items-center">
             <h3 className="text-lg sm:text-xl font-display">Follow Us</h3>
             <a
@@ -72,7 +68,6 @@ function Footer() {
           </div>
         </div>
 
-        {/* Footer Bottom */}
         <div className="mt-8 pt-6 border-t border-gray-800 text-center text-sm">
           <p>&copy; Juno 2025 Inter-College Event. All rights reserved.</p>
         </div>

@@ -11,7 +11,6 @@ function TeamList() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 
-    // Create a single observer instance
     const observer = new IntersectionObserver(
       (entries) => {
         setFlipped((prev) => {
@@ -28,12 +27,11 @@ function TeamList() {
       { threshold: 0.5 }
     );
 
-    // Observe all elements
     roleRefs.current.forEach((element) => {
       if (element) observer.observe(element);
     });
 
-    return () => observer.disconnect(); // Cleanup observer
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -52,13 +50,12 @@ function TeamList() {
                   data-id={member.id}
                   className="flex flex-col items-center opacity-0"
                 >
-                  <CardFlip isFlipped={flipped[member.id] || false} flipDirection="horizontal">
-                    {/* Front Side */}
-                    <div className="bg-gray-700 w-[300px] h-[300px] flex items-center justify-center text-gray-400">
-                      {/* Role Image */}
-                    </div>
+                  <CardFlip
+                    isFlipped={flipped[member.id] || false}
+                    flipDirection="horizontal"
+                  >
+                    <div className="bg-gray-700 w-[300px] h-[300px] flex items-center justify-center text-gray-400"></div>
 
-                    {/* Back Side */}
                     <div className="bg-gray-700 w-[300px] h-[300px] flex items-center justify-center text-gray-400">
                       <img className="" src={member.image} alt={member.name} />
                     </div>

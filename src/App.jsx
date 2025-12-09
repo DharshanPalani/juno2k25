@@ -11,6 +11,8 @@ import Contact from "./pages/Contact";
 import Events from "./pages/Events";
 import Team from "./pages/Team";
 
+import SiteNotice from "./components/SiteNotice";
+
 function App() {
   return (
     <Router>
@@ -19,15 +21,17 @@ function App() {
         className="bg-fixed bg-gradient-to-r from-gray-900 to-gray-800 min-h-screen"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <Navbar />
-        <Routes>
+        <SiteNotice />
+
+        {/* <Navbar /> */}
+        {/* <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/team" element={<Team />} />
           <Route path="/events" element={<Events />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/event/:id" element={<EventDetails />} />
-        </Routes>
-        <Footer />
+        </Routes> */}
+        {/* <Footer /> */}
       </div>
     </Router>
   );

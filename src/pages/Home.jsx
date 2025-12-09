@@ -1,11 +1,11 @@
-import HeroSetion from '../components/HeroSection'
+import HeroSetion from "../components/HeroSection";
 
 function Home() {
   return (
     <div>
-        <HeroSetion />
+      <HeroSetion />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

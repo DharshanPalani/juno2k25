@@ -9,7 +9,7 @@ function SiteNotice() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        We are working on something exciting for JUNO 2K26 <br />
+        We are working on something exciting <br />
         <br /> coming soon.
       </motion.h1>
       <motion.p
@@ -18,7 +18,7 @@ function SiteNotice() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.8 }}
       >
-        By JUNO Software Solutions
+        By SoIT Software Solutions
       </motion.p>
     </main>
   );

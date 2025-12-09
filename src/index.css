@@ -2,35 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
-	font-family: 'LemonMilk';
-	src: url('../src/fonts/LEMONMILK-Regular.otf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "LemonMilk";
+  src: url("../src/fonts/LEMONMILK-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Montern';
-	src: url('../src/fonts/Montern\ -\ \(Demo\)\ hanscostudio.com.ttf');
-	font-weight: normal;
-	font-size: normal;
+  font-family: "Montern";
+  src: url("../src/fonts/Montern\ -\ \(Demo\)\ hanscostudio.com.ttf");
+  font-weight: normal;
+  font-size: normal;
 }
 
 @font-face {
-	font-family: 'BullStand';
-	src: url('../src/fonts/bullstandregular-rgojo.ttf') format('truetype');
-	font-weight: normal;
-	font-size: normal;
+  font-family: "BullStand";
+  src: url("../src/fonts/bullstandregular-rgojo.ttf") format("truetype");
+  font-weight: normal;
+  font-size: normal;
 }
 
 body {
-	font-family: 'LemonMilk', sans-serif;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  font-family: "LemonMilk", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: "Courier New", Courier, monospace;
 }
 
 .bull-stand {
-	font-family: 'BullStand', sans-serif;
+  font-family: "BullStand", sans-serif;
 }
